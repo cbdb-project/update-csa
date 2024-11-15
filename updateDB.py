@@ -16,7 +16,6 @@ input_df = input_df.fillna("")
 def create_json(row):
     json_str = "["
     for i, column in enumerate(input_df.columns):
-
         if column == "通訊人":
             if row[column] == "":
                 json_str += '""'
